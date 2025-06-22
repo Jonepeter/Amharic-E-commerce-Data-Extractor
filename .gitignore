@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak
+venv.bak
+
+# Data
+data/raw/
+data/processed/
+
+# Notebooks
+.ipynb_checkpoints
+/data
+
+# DVC
+.dvc/cache
+.dvc/tmp
+.dvc/lock
+.dvc/local
+
+# Environment variables
+.env
+.session
