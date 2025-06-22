@@ -70,3 +70,39 @@ EthioMart aims to centralize e-commerce activity from multiple Ethiopian Telegra
 ---
 
 ## Directory Structure
+
+```bash
+📁Amharic-E-commerce-Data-Extractor/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── .dvcignore
+│
+├── data/
+│   ├── raw/                # Raw, unprocessed data (from Telegram, etc.)
+│   ├── processed/          # Cleaned and preprocessed data
+│   └── external/           # Any external datasets or resources
+│
+├── data_collection_output/ # Temporary or backup outputs from data collection
+│
+├── src/
+│   ├── data_collection/    # Scripts for data scraping/ingestion
+│   │   └── telegram_ingestor.py
+│   ├── preprocessing/      # Scripts for cleaning, normalization, tokenization
+│   │   └── text_preprocessing.py
+│   ├── ner_model/          # NER model training, evaluation, and utilities
+│   └── utils/              # Utility scripts (optional, e.g., for helpers, config)
+│
+├── models/                 # Saved models, checkpoints, and tokenizer files
+│
+├── notebooks/
+│   ├── Preprocessing.ipynb
+│   └── Scrapper.ipynb               
+│
+├── reports/                # Generated analysis, figures, and final reports
+│
+├── docs/                   # Project documentation, setup guides, etc.
+│
+└── .dvc/                   # DVC (Data Version Control) files and cache
+```
