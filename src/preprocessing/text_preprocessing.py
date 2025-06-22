@@ -33,13 +33,3 @@ def preprocess_dataframe(df):
             'tokens': tokens,  # Store tokens as space-separated string
         })
     return pd.DataFrame(processed_rows)
-
-def main():
-    os.makedirs(os.path.dirname(PROCESSED_CSV_PATH), exist_ok=True)
-    df = pd.read_csv(RAW_CSV_PATH, encoding='utf-8-sig')
-    processed_df = preprocess_dataframe(df)
-    processed_df.to_csv(PROCESSED_CSV_PATH, index=False, encoding='utf-8-sig')
-    print(f'Preprocessed data saved to {PROCESSED_CSV_PATH}')
-
-if __name__ == '__main__':
-    main() 
